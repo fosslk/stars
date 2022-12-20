@@ -2,6 +2,8 @@
 
 The dashboard to display the stars earned by clubs collaborated with FOSSLK.
 
+Read `About.md` for more information about this program.
+
 ## Getting Started
 
 ### How to run locally
@@ -36,6 +38,5 @@ The structure as follows.
 When you need to add new stars, just find the club under current year key. Then increase the number. If you don't find the Uni, add it as a new entry and add data.
 
 Make sure to add a clear commit message why points are changing.
-
 
 Happy collaborating 🎉
