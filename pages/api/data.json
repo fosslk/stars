@@ -1,0 +1,34 @@
+{
+  "2022": [
+    {
+      "key": "icbt",
+      "name": "ICBT Campus",
+      "src": "/assets/cc/empty.png",
+      "count": 10
+    },
+    {
+      "key": "jpura",
+      "name": "University of Sri Jayewardenepura",
+      "src": "/assets/cc/jpura.png",
+      "count": 10
+    },
+    {
+      "key": "uwu",
+      "name": "Uva Wellassa University",
+      "src": "/assets/cc/uwu.png",
+      "count": 10
+    },
+    {
+      "key": "rusl",
+      "name": "Rajarata University Of Sri Lanka",
+      "src": "/assets/cc/rusl.png",
+      "count": -10
+    },
+    {
+        "key": "sliit",
+        "name": "Sri Lanka Institute of Information Technology",
+        "src": "/assets/cc/sliit.jpeg",
+        "count": 0
+      }
+  ]
+}
