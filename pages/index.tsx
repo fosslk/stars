@@ -1,9 +1,14 @@
-import { NextApiRequest } from "next";
 import Head from "next/head";
 import StarItem from "../components/star-item";
-import { StarItem as ItemType } from "../types/star-item";
+import { StarItem as ItemType, StatType } from "../types/star-item";
+import stats from "../data/data.json";
 
-export default function Home({ items }: { items: ItemType[] }) {
+export default function Home() {
+
+  const key = new Date().getFullYear().toString();
+  const data = (stats as StatType)[key];
+  const items = data as ItemType[];
+
   return (
     <>
       <Head>
@@ -24,22 +29,4 @@ export default function Home({ items }: { items: ItemType[] }) {
       </main>
     </>
   );
-}
-
-export async function getServerSideProps({ req }: { req: NextApiRequest }) {
-  let items: ItemType[] = [];
-  
-  try {
-    const res = await fetch(`${process.env.BASE_URL}/api/stats`);
-    const { data } = await res.json();
-    items = data;
-  } catch (error) {
-    console.log(error);
-  }
-
-  return {
-    props: {
-      items,
-    },
-  };
 }

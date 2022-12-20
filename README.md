@@ -6,7 +6,7 @@ The dashboard to display the stars earned by clubs collaborated with FOSSLK.
 
 ### How to run locally
 
-- Rename `env.sample` to `.env`
+- Copy `env.sample` to `.env`
 
 - Install dependecies `npm install`
 
@@ -16,7 +16,7 @@ Yes it simple 😉
 
 ### How to update stars
 
-The star data is located inside `pages/api/data.json`
+The star data is located inside `data/data.json`
 
 The structure as follows.
 
