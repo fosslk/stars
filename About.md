@@ -1,4 +1,4 @@
-This is a program to evaluate and offer points for Campus clubs in collaboration with FOSS.LK
+This is a program to evaluate and offer points for Campus clubs collaborated with FOSS.LK
 
 ### Terms and conditions
 
