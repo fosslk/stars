@@ -26,7 +26,7 @@ export default function Home({ items }: { items: ItemType[] }) {
   );
 }
 
-export async function getStaticProps({ req }: { req: NextApiRequest }) {
+export async function getServerSideProps({ req }: { req: NextApiRequest }) {
   let items: ItemType[] = [];
   
   try {
