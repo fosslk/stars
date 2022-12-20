@@ -27,12 +27,19 @@ export default function Home({ items }: { items: ItemType[] }) {
 }
 
 export async function getStaticProps({ req }: { req: NextApiRequest }) {
-  const res = await fetch(`${process.env.BASE_URL}/api/stats`);
-  const { data } = await res.json();
+  let items: ItemType[] = [];
+  
+  try {
+    const res = await fetch(`${process.env.BASE_URL}/api/stats`);
+    const { data } = await res.json();
+    items = data;
+  } catch (error) {
+    console.log(error);
+  }
 
   return {
     props: {
-      items: data,
+      items,
     },
   };
 }
