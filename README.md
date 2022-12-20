@@ -6,6 +6,8 @@ The dashboard to display the stars earned by clubs collaborated with FOSSLK.
 
 ### How to run locally
 
+- Rename `env.sample` to `.env`
+
 - Install dependecies `npm install`
 
 - Run project `npm run dev`
